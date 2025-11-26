@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-box{
+    position:relative;
+    background: url('side.jpg');
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+}
+
+.main-box .sidemenu{
+    position: fixed;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.1);
+    width:280px;
+    left:-280px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    transition: all 0.3s linear;
+}
+
+.sidemenu .logo{
+    position: absolute;
+    height:60px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    width:100%;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size:25px;
+    color:#fff;
+    position:absolute;
+    left:20px;
+    font-weight:500;
+    line-height: 60px;
+}
+
+
+
+.main-box ul{
+    list-style-type: none;
+}
+
+
+.sidemenu .menu{
+    width: 100%;
+    position: absolute;
+    top:80px;
+}
+
+
+.menu li{
+    margin-top: 6px;
+    padding: 10px 20px;
+    transition: all 0.3s linear;
+}
+
+.menu li i{
+    color:white;
+    font-size:20px;
+    padding-right: 8px;
+} 
+
+.menu a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    display: block;
+}
+
+.menu li:hover{
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+
+.sidemenu .social-media{
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+
+.social-media i{
+    color:#fff;
+    opacity:0.6;
+    padding:0 4px;
+    cursor:pointer;
+    font-size: 16px;
+    transition: all 0.1s linear;
+}
+
+.social-media i:hover{
+    font-size: 20px;
+    opacity: 1;
+}
+
+#check{
+    display: none;
+}
+
+
+.main-box .btn_one i{
+    font-size: 24px;
+    font-weight:700;
+    line-height:60px;
+    position: absolute;
+    left:16px;
+    color:#fff;
+    cursor:pointer;
+    z-index:2;
+    transition: all 0.3s linear;
+}
+
+.sidemenu .btn_two i{
+    font-size: 24px;
+    color:#fff;
+    position: absolute;
+    left:250px;
+    line-height: 60px;
+    cursor:pointer;
+    transition: all 0.3s linear;
+}
+
+
+.btn_one i:hover{
+    font-size: 29px;
+}
+
+#check:checked ~ .sidemenu{
+    left:0;
+}
+
+#check:checked ~ .btn_one i{
+    display:none;
+}

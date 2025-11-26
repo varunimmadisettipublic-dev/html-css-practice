@@ -134,7 +134,6 @@ h5.name{
 .card.back-face .signature{
     margin-top:70px;
     width: 85%;
-    background:line;
     height: 40px;
     background: repeating-linear-gradient(#fff, #fff 3px, #efefef 0px, #efefef 9px);
     display: flex;
